@@ -10,7 +10,6 @@ namespace NobiDev\EnvManager\Exceptions;
 use Exception;
 
 /**
- * Class InvalidValueException
  * @package NobiDev\EnvManager\Exceptions
  * @noinspection PhpClassNamingConventionInspection
  */

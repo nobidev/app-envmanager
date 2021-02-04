@@ -10,7 +10,6 @@ namespace NobiDev\EnvManager\Exceptions;
 use Exception;
 
 /**
- * Class FileNotFoundException
  * @package NobiDev\EnvManager\Exceptions
  * @noinspection PhpClassNamingConventionInspection
  */

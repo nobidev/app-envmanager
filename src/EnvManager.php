@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace NobiDev\EnvManager;
 
 use Illuminate\Contracts\Container\Container;
+use Illuminate\Support\Facades\File;
 use NobiDev\EnvManager\Contracts\EnvManager as EnvManagerContract;
 use NobiDev\EnvManager\Exceptions\KeyNotFoundException;
 use NobiDev\EnvManager\Workers\Formatter;
@@ -19,7 +20,6 @@ use function is_array;
 use function is_string;
 
 /**
- * Class EnvManager
  * @package NobiDev\EnvManager
  */
 class EnvManager implements EnvManagerContract
@@ -31,7 +31,6 @@ class EnvManager implements EnvManagerContract
     protected ?string $filePath;
 
     /**
-     * EnvManager constructor.
      * @param Container $app
      * @throws Exceptions\UnableReadFileException
      */
@@ -60,7 +59,14 @@ class EnvManager implements EnvManagerContract
         } elseif (method_exists($this->application, 'environmentPath') && method_exists($this->application, 'environmentFile')) {
             $this->filePath = $this->application->environmentPath() . '/' . $this->application->environmentFile();
         } else {
-            $this->filePath = __DIR__ . '/../../../../../../.env';
+            $dir_path = __DIR__;
+            while (strrpos($dir_path, DIRECTORY_SEPARATOR) !== false) {
+                if (File::exists($dir_path . '/.env')) {
+                    break;
+                }
+                $dir_path = substr($dir_path, 0, strrpos($dir_path, DIRECTORY_SEPARATOR));
+            }
+            $this->filePath = $dir_path . '/.env';
         }
 
         $this->reader->load($this->filePath);

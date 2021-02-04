@@ -13,7 +13,6 @@ use NobiDev\EnvManager\Exceptions\UnableWriteToFileException;
 use function dirname;
 
 /**
- * Class Writer
  * @package NobiDev\EnvManager\Workers
  */
 class Writer implements WriterContract
@@ -51,7 +50,9 @@ class Writer implements WriterContract
         return $this;
     }
 
-    /** @noinspection PhpMethodNamingConventionInspection */
+    /**
+     * @noinspection PhpMethodNamingConventionInspection
+     */
     public function appendCommentLine(string $comment): Writer
     {
         return $this->appendLine('# ' . $comment);
