@@ -23,8 +23,6 @@ class FacadeTest extends TestCase
     }
 
     /**
-     * @param string $name
-     * @return ReflectionMethod
      * @throws ReflectionException
      */
     protected static function getMethod(string $name): ReflectionMethod
