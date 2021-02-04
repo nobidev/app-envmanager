@@ -8,7 +8,6 @@ declare(strict_types=1);
 namespace NobiDev\EnvManager\Contracts;
 
 /**
- * Interface Writer
  * @package NobiDev\EnvManager\Contracts
  */
 interface Writer
@@ -19,7 +18,9 @@ interface Writer
 
     public function appendEmptyLine(): Writer;
 
-    /** @noinspection PhpMethodNamingConventionInspection */
+    /**
+     * @noinspection PhpMethodNamingConventionInspection
+     */
     public function appendCommentLine(string $comment): Writer;
 
     public function appendSetter(string $key, string $value = null, string $comment = null, bool $export = false): Writer;

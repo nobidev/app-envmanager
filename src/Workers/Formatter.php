@@ -10,7 +10,6 @@ namespace NobiDev\EnvManager\Workers;
 use NobiDev\EnvManager\Exceptions\InvalidValueException;
 
 /**
- * Class Formatter
  * @package NobiDev\EnvManager\Workers
  */
 class Formatter implements \NobiDev\EnvManager\Contracts\Formatter

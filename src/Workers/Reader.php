@@ -12,7 +12,6 @@ use NobiDev\EnvManager\Contracts\Reader as ReaderContract;
 use NobiDev\EnvManager\Exceptions\UnableReadFileException;
 
 /**
- * Class Reader
  * @package NobiDev\EnvManager\Workers
  */
 class Reader implements ReaderContract

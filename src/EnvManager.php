@@ -20,7 +20,6 @@ use function is_array;
 use function is_string;
 
 /**
- * Class EnvManager
  * @package NobiDev\EnvManager
  */
 class EnvManager implements EnvManagerContract
@@ -32,7 +31,6 @@ class EnvManager implements EnvManagerContract
     protected ?string $filePath;
 
     /**
-     * EnvManager constructor.
      * @param Container $app
      * @throws Exceptions\UnableReadFileException
      */

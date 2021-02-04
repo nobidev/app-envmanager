@@ -10,7 +10,6 @@ namespace NobiDev\EnvManager\Exceptions;
 use Exception;
 
 /**
- * Class KeyNotFoundException
  * @package NobiDev\EnvManager\Exceptions
  * @noinspection PhpClassNamingConventionInspection
  */

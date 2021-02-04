@@ -10,7 +10,6 @@ namespace NobiDev\EnvManager\Contracts;
 use Illuminate\Contracts\Container\Container;
 
 /**
- * Interface EnvManager
  * @package NobiDev\EnvManager\Contracts
  */
 interface EnvManager
