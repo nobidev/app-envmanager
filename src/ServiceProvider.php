@@ -15,12 +15,13 @@ class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
 {
     public function register(): void
     {
+        parent::register();
         $this->app->bind(Constant::getName(), LibraryStarter::class);
     }
 
     public function provides(): array
     {
-        return [
+        return parent::provides() + [
             Constant::getName(),
         ];
     }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use NobiDev\LibraryStarter\Constant;
 use NobiDev\LibraryStarter\Facade;
 use PHPUnit\Framework\TestCase;

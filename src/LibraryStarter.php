@@ -14,12 +14,12 @@ use NobiDev\LibraryStarter\Workers\Example;
  */
 class LibraryStarter implements LibraryStarterContract
 {
-    protected Container $app;
+    protected Container $application;
     protected Example $worker;
 
     public function __construct(Container $app)
     {
-        $this->app = $app;
+        $this->application = $app;
 
         // $this->worker = null;
 
