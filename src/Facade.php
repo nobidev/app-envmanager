@@ -10,7 +10,6 @@ namespace NobiDev\EnvManager;
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
 /**
- * Class Facade
  * @package NobiDev\EnvManager
  */
 class Facade extends BaseFacade

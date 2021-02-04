@@ -5,12 +5,17 @@
 
 declare(strict_types=1);
 
+namespace NobiDev\EnvManager\Tests;
+
 use NobiDev\EnvManager\Constant;
 use NobiDev\EnvManager\Facade;
 use PHPUnit\Framework\TestCase;
+use ReflectionClass;
+use ReflectionException;
+use ReflectionMethod;
 
 /**
- * Class FacadeTest
+ * @package NobiDev\EnvManager\Tests
  */
 class FacadeTest extends TestCase
 {
