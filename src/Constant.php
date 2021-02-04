@@ -5,16 +5,16 @@
 
 declare(strict_types=1);
 
-namespace NobiDev\LibraryStarter;
+namespace NobiDev\EnvManager;
 
 /**
  * Class Constant
- * @package NobiDev\LibraryStarter
+ * @package NobiDev\EnvManager
  */
 class Constant
 {
     public static function getName(): string
     {
-        return 'LibraryStarter';
+        return 'EnvManager';
     }
 }

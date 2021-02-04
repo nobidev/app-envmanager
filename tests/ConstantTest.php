@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-use NobiDev\LibraryStarter\Constant;
+use NobiDev\EnvManager\Constant;
 use PHPUnit\Framework\TestCase;
 
 /**

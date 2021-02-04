@@ -1,6 +1,6 @@
 {
-  "name": "nobidev/library-starter",
-  "description": "Library Starter",
+  "name": "nobidev/app-envmanager",
+  "description": "Application Environment Manager",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -21,16 +21,16 @@
   },
   "autoload": {
     "psr-4": {
-      "NobiDev\\LibraryStarter\\": "src/"
+      "NobiDev\\EnvManager\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "NobiDev\\LibraryStarter\\ServiceProvider"
+        "NobiDev\\EnvManager\\ServiceProvider"
       ],
       "aliases": {
-        "LibraryStarter": "NobiDev\\LibraryStarter\\Facade"
+        "EnvManager": "NobiDev\\EnvManager\\Facade"
       }
     }
   }
