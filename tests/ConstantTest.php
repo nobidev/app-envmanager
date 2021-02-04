@@ -5,11 +5,13 @@
 
 declare(strict_types=1);
 
+namespace NobiDev\LibraryStarter\Tests;
+
 use NobiDev\LibraryStarter\Constant;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class ConstantTest
+ * @package NobiDev\LibraryStarter\Tests
  */
 class ConstantTest extends TestCase
 {

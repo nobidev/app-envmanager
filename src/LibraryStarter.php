@@ -12,7 +12,6 @@ use NobiDev\LibraryStarter\Contracts\LibraryStarter as LibraryStarterContract;
 use NobiDev\LibraryStarter\Workers\Example;
 
 /**
- * Class LibraryStarter
  * @package NobiDev\LibraryStarter
  */
 class LibraryStarter implements LibraryStarterContract

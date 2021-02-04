@@ -11,7 +11,6 @@ use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 /**
- * Class ServiceProvider
  * @package NobiDev\LibraryStarter
  */
 class ServiceProvider extends BaseServiceProvider implements DeferrableProvider

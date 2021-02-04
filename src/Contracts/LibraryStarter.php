@@ -10,7 +10,6 @@ namespace NobiDev\LibraryStarter\Contracts;
 use Illuminate\Contracts\Container\Container;
 
 /**
- * Interface LibraryStarter
  * @package NobiDev\LibraryStarter\Contracts
  */
 interface LibraryStarter

@@ -11,7 +11,6 @@ use NobiDev\LibraryStarter\Contracts\Example as ExampleContract;
 use NobiDev\LibraryStarter\Exceptions\ExampleException;
 
 /**
- * Class Example
  * @package NobiDev\LibraryStarter\Workers
  */
 class Example implements ExampleContract

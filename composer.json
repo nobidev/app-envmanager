@@ -21,7 +21,8 @@
   },
   "autoload": {
     "psr-4": {
-      "NobiDev\\LibraryStarter\\": "src/"
+      "NobiDev\\LibraryStarter\\": "src/",
+      "NobiDev\\LibraryStarter\\Tests\\": "tests/"
     }
   },
   "extra": {

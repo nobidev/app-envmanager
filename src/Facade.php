@@ -10,7 +10,6 @@ namespace NobiDev\LibraryStarter;
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
 /**
- * Class Facade
  * @package NobiDev\LibraryStarter
  */
 class Facade extends BaseFacade
