@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Composer
+        uses: php-actions/composer@v4
+
+      - name: Run PHPUnit
+        uses: php-actions/phpunit@v9
+        with:
+          configuration: ./phpunit.xml
+          memory_limit: 256M
