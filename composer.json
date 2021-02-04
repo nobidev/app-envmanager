@@ -21,7 +21,8 @@
   },
   "autoload": {
     "psr-4": {
-      "NobiDev\\EnvManager\\": "src/"
+      "NobiDev\\EnvManager\\": "src/",
+      "NobiDev\\EnvManager\\Tests\\": "tests/"
     }
   },
   "extra": {
