@@ -11,7 +11,6 @@ use Exception;
 
 /**
  * @package NobiDev\EnvManager\Exceptions
- * @noinspection PhpClassNamingConventionInspection
  */
 class UnableWriteToFileException extends Exception
 {

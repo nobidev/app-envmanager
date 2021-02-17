@@ -18,9 +18,6 @@ interface Writer
 
     public function appendEmptyLine(): Writer;
 
-    /**
-     * @noinspection PhpMethodNamingConventionInspection
-     */
     public function appendCommentLine(string $comment): Writer;
 
     public function appendSetter(string $key, string $value = null, string $comment = null, bool $export = false): Writer;
