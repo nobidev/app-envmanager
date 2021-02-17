@@ -50,9 +50,6 @@ class Writer implements WriterContract
         return $this;
     }
 
-    /**
-     * @noinspection PhpMethodNamingConventionInspection
-     */
     public function appendCommentLine(string $comment): Writer
     {
         return $this->appendLine('# ' . $comment);
@@ -99,7 +96,6 @@ class Writer implements WriterContract
     /**
      * @param string $filePath
      * @throws UnableWriteToFileException
-     * @noinspection PhpMethodNamingConventionInspection
      */
     protected function ensureFileIsWritable(string $filePath): void
     {

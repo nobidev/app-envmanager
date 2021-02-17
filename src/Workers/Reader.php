@@ -42,7 +42,6 @@ class Reader implements ReaderContract
 
     /**
      * @throws UnableReadFileException
-     * @noinspection PhpMethodNamingConventionInspection
      */
     protected function ensureFileIsReadable(): void
     {
@@ -72,7 +71,6 @@ class Reader implements ReaderContract
 
     /**
      * @throws UnableReadFileException
-     * @noinspection PhpMethodNamingConventionInspection
      */
     protected function readLinesFromFile(): array
     {

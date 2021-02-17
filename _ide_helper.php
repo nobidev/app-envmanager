@@ -9,8 +9,6 @@
  * @noinspection EmptyClassInspection
  * @noinspection PhpUndefinedClassInspection
  * @noinspection PhpUnhandledExceptionInspection
- * @noinspection PhpMethodNamingConventionInspection
- * @noinspection PhpClassNamingConventionInspection
  * @noinspection PhpUnused
  */
 
