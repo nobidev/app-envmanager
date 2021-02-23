@@ -8,6 +8,7 @@ declare(strict_types=1);
 namespace NobiDev\EnvManager\Workers;
 
 use NobiDev\EnvManager\Exceptions\InvalidValueException;
+use function count;
 
 /**
  * @package NobiDev\EnvManager\Workers
@@ -104,7 +105,12 @@ class Formatter implements \NobiDev\EnvManager\Contracts\Formatter
                 $value = $this->normaliseValue($value, $quote);
                 $comment = ($this->isComment($extant)) ? $this->normaliseComment($extant) : '';
             } else {
-                [$value_raw, $comment_raw] = explode(' #', $data_trimmed, 2);
+                $raw = explode(' #', $data_trimmed, 2);
+                if (count($raw) === 1) {
+                    [$value_raw] = $raw;
+                } else {
+                    [$value_raw, $comment_raw] = $raw;
+                }
                 $value = $this->normaliseValue($value_raw);
                 $comment = (isset($comment_raw)) ? $this->normaliseComment($comment_raw) : '';
 
