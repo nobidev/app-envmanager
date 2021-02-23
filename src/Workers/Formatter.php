@@ -20,7 +20,7 @@ class Formatter implements \NobiDev\EnvManager\Contracts\Formatter
         $force_quotes = ($comment !== '' && trim((string)$value) === '');
         $value = $this->formatValue($value, $force_quotes);
         $key_formatted = $this->formatKey($key);
-        $comment = $this->formatComment($comment);
+        $comment = isset($comment) ? $this->formatComment($comment) : '';
         $label = $export ? 'export ' : '';
         return "{$label}{$key_formatted}={$value}{$comment}";
     }
